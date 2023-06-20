@@ -1,18 +1,21 @@
-import java.time.LocalDate;
-
 public class Student extends User implements Comparable<Student>{
-    private Long studentId;
+    private int studentId;
 
-    public Student(String name, String patronymic, String lastName, int age,  Long studentId) {
+    public Student(int studentId, String name, String patronymic, String lastName, int age) {
         super(name, lastName,  patronymic, age);
         this.studentId = studentId;
+           }
+
+    public Student(int studentId, String name) {
+        super(studentId,  name);
     }
 
-    public Long getStudentId() {
+
+    public int getStudentId() {
         return studentId;
     }
 
-    public void setStudentId(Long studentId) {
+    public void setStudentId(int studentId) {
         this.studentId = studentId;
     }
 
@@ -29,6 +32,6 @@ public class Student extends User implements Comparable<Student>{
 
     @Override
     public int compareTo(Student o) {
-        return this.studentId.compareTo(o.studentId);
+        return 0;
     }
 }

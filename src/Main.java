@@ -17,5 +17,8 @@ public class Main {
         set.add(Kirikovski);
 
         System.out.println(Sidorovich);
+
+        System.out.println();
     }
+
 }

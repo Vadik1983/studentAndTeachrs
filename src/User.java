@@ -7,6 +7,11 @@ public class User extends Human {
         this.patronymic = patronymic;
     }
 
+    public User(int studentId, String name) {
+        super(studentId, name);
+        this.patronymic = patronymic;
+    }
+
     public String getPatronymic() {
         return patronymic;
     }

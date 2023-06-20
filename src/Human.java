@@ -7,6 +7,9 @@ public abstract class Human {
         this.name = name;
     }
 
+    public Human(int studentId, String name) {
+    }
+
     public String getName() {
         return name;
     }
